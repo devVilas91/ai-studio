@@ -31,7 +31,19 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+**Required Checks** (verify all apply):
+- [ ] TypeScript-First: All code will be TypeScript with strict mode; no `any` types without justification
+- [ ] Test-First: TDD approach planned; tests will be written before implementation
+- [ ] UX Consistency: HeroUI v3 + Tailwind v4 identified; i18n strategy defined; API response envelope format specified
+- [ ] Performance: Performance goals defined (frontend: LCP/FID/CLS targets; backend: p95 response times; bundle size limits); Tailwind v4 optimization utilized
+- [ ] Code Quality: ESLint + Prettier configured; HeroUI v3 compound component patterns enforced; complexity thresholds understood
+- [ ] Security: Input validation method chosen (Zod/Joi); auth strategy (JWT); database security (parameterized queries)
+- [ ] Stack Compliance: Using Next.js full-stack with TypeScript, PostgreSQL (Supabase), Prisma ORM, HeroUI v3; no unauthorized dependencies
+
+**Violations/Justifications** (if any check marked false):
+| Principle | Why Not Needed | Alternative Approach |
+|-----------|----------------|---------------------|
+| [e.g., Performance] | [reason] | [mitigation] |
 
 ## Project Structure
 

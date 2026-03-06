@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "Estudio de Contenido IA",
+    "loading": "Cargando...",
+    "error": "Error",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "upload": "Subir"
+  },
+  "auth": {
+    "login": "Iniciar sesión con Google",
+    "logout": "Cerrar sesión",
+    "welcome": "Bienvenido",
+    "invalidCredentials": "Credenciales inválidas"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "newProject": "Nuevo Proyecto",
+    "projectName": "Nombre del Proyecto",
+    "projectDescription": "Descripción (opcional)",
+    "createProject": "Crear Proyecto",
+    "noProjects": "No hay proyectos aún",
+    "myProjects": "Mis Proyectos"
+  },
+  "workflows": {
+    "title": "Flujos de Trabajo",
+    "newWorkflow": "Nuevo Flujo de Trabajo",
+    "workflowName": "Nombre del Flujo",
+    "steps": "Pasos",
+    "addStep": "Agregar Paso",
+    "runWorkflow": "Ejecutar Flujo",
+    "executionStatus": "Estado de Ejecución",
+    "pending": "Pendiente",
+    "running": "Ejecutando",
+    "completed": "Completado",
+    "failed": "Fallido"
+  },
+  "assets": {
+    "title": "Recursos",
+    "uploadAsset": "Subir Recurso",
+    "dragDrop": "Arrastra y suelta archivos aquí",
+    "orClick": "o haz clic para explorar",
+    "preview": "Vista previa",
+    "noAssets": "No hay recursos subidos aún"
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "subtitle": "Gestiona tus proyectos y flujos de trabajo",
+    "noDescription": "Sin descripción",
+    "updated": "Actualizado",
+    "members": "miembros",
+    "signOut": "Cerrar Sesión"
+  }
+}

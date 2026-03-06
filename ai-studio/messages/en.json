@@ -1,0 +1,59 @@
+{
+  "common": {
+    "appName": "AI Content Studio",
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "upload": "Upload"
+  },
+  "auth": {
+    "login": "Sign in with Google",
+    "logout": "Sign out",
+    "welcome": "Welcome",
+    "invalidCredentials": "Invalid credentials"
+  },
+  "projects": {
+    "title": "Projects",
+    "newProject": "New Project",
+    "projectName": "Project Name",
+    "projectDescription": "Description (optional)",
+    "createProject": "Create Project",
+    "noProjects": "No projects yet",
+    "myProjects": "My Projects"
+  },
+  "workflows": {
+    "title": "Workflows",
+    "newWorkflow": "New Workflow",
+    "workflowName": "Workflow Name",
+    "steps": "Steps",
+    "addStep": "Add Step",
+    "runWorkflow": "Run Workflow",
+    "executionStatus": "Execution Status",
+    "pending": "Pending",
+    "running": "Running",
+    "completed": "Completed",
+    "failed": "Failed"
+  },
+  "assets": {
+    "title": "Assets",
+    "uploadAsset": "Upload Asset",
+    "dragDrop": "Drag and drop files here",
+    "orClick": "or click to browse",
+    "preview": "Preview",
+    "noAssets": "No assets uploaded yet"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Manage your projects and workflows",
+    "noDescription": "No description provided",
+    "updated": "Updated",
+    "members": "members",
+    "signOut": "Sign Out"
+  }
+}

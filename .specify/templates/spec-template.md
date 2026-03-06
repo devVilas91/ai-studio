@@ -113,3 +113,23 @@
 - **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+
+### Performance Requirements *(mandatory for MERN stack)*
+
+- **Frontend**: [e.g., "Initial page load < 2s on 3G", "Time-to-Interactive < 3s", "LCP < 2.5s", "FID < 100ms", "CLS < 0.1", "Bundle size < 200KB gzipped"]
+- **Backend**: [e.g., "API p95 response < 200ms for simple queries", "< 500ms for complex queries"]
+- **Database**: [e.g., "All queries use indexes", "No N+1 problems", "Connection pooling enabled"]
+
+### Security Requirements *(mandatory)*
+
+- **Authentication**: [e.g., "JWT with refresh tokens", "bcrypt password hashing", "rate limiting"]
+- **Input Validation**: [e.g., "Zod schemas for all API inputs", "sanitization for user-generated content"]
+- **Data Protection**: [e.g., "Parameterized queries only", "secrets in environment variables", "CORS properly configured"]
+- **Frontend Security**: [e.g., "XSS protection via React escaping + DOMPurify", "CSRF tokens for state-changing operations"]
+
+### UX Consistency Requirements *(mandatory)*
+
+- **Design System**: [e.g., "Use Material-UI components", "Follow design tokens for colors/spacing", "Responsive breakpoints defined"]
+- **Accessibility**: [e.g., "WCAG 2.1 AA compliance", "ARIA labels for interactive elements", "Keyboard navigation support"]
+- **Internationalization**: [e.g., "All user-facing text in i18n JSON files", "RTL language support if needed"]
+- **API Consistency**: [e.g., "Standard response envelope: { success, data, error }", "consistent error codes", "versioned API endpoints"]

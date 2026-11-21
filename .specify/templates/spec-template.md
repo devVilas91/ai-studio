@@ -100,6 +100,19 @@
 - **[Entity 1]**: [What it represents, key attributes without implementation]
 - **[Entity 2]**: [What it represents, relationships to other entities]
 
+### Scope & Non-Goals
+
+- **In Scope**: [User-visible behavior included in this feature]
+- **Out of Scope**: [Explicit exclusions, including any applicable V1 non-goals]
+
+### Architecture & Quality Requirements *(as applicable)*
+
+- **Tenant Isolation**: [Tenant-owned data and access boundaries that apply to this feature]
+- **AI Behavior**: [Provider abstraction, user approval, and tenant-scoped retrieval requirements, if applicable]
+- **Validation**: [Runtime validation requirements for relevant inputs and data boundaries]
+- **Accessibility & Themes**: [Keyboard, semantic, responsive, light-theme, and dark-theme expectations, if applicable]
+- **Testing**: [Critical workflows, tenant isolation cases, and AI mocking requirements, if applicable]
+
 ## Success Criteria *(mandatory)*
 
 <!--
@@ -114,22 +127,21 @@
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
 
-### Performance Requirements *(mandatory for MERN stack)*
+### Performance Requirements *(when applicable)*
 
-- **Frontend**: [e.g., "Initial page load < 2s on 3G", "Time-to-Interactive < 3s", "LCP < 2.5s", "FID < 100ms", "CLS < 0.1", "Bundle size < 200KB gzipped"]
-- **Backend**: [e.g., "API p95 response < 200ms for simple queries", "< 500ms for complex queries"]
-- **Database**: [e.g., "All queries use indexes", "No N+1 problems", "Connection pooling enabled"]
+- **User-facing performance**: [Measurable targets appropriate to the workflow]
+- **Data and service performance**: [Measurable targets appropriate to the workflow]
 
 ### Security Requirements *(mandatory)*
 
-- **Authentication**: [e.g., "JWT with refresh tokens", "bcrypt password hashing", "rate limiting"]
-- **Input Validation**: [e.g., "Zod schemas for all API inputs", "sanitization for user-generated content"]
-- **Data Protection**: [e.g., "Parameterized queries only", "secrets in environment variables", "CORS properly configured"]
-- **Frontend Security**: [e.g., "XSS protection via React escaping + DOMPurify", "CSRF tokens for state-changing operations"]
+- **Authentication and Authorization**: [Applicable identity and permission requirements]
+- **Tenant Isolation**: [How the feature must prevent cross-tenant access]
+- **Input Validation**: [Validation requirements for untrusted input]
+- **Data Protection**: [Applicable data handling and secret protection requirements]
 
-### UX Consistency Requirements *(mandatory)*
+### UX Requirements *(when user-facing)*
 
-- **Design System**: [e.g., "Use Material-UI components", "Follow design tokens for colors/spacing", "Responsive breakpoints defined"]
-- **Accessibility**: [e.g., "WCAG 2.1 AA compliance", "ARIA labels for interactive elements", "Keyboard navigation support"]
-- **Internationalization**: [e.g., "All user-facing text in i18n JSON files", "RTL language support if needed"]
-- **API Consistency**: [e.g., "Standard response envelope: { success, data, error }", "consistent error codes", "versioned API endpoints"]
+- **Design System**: [HeroUI and Tailwind CSS usage, as applicable]
+- **Accessibility**: [Keyboard navigation, semantic HTML, and relevant WCAG-oriented criteria]
+- **Responsiveness**: [Mobile and tablet behavior]
+- **Themes**: [Light and dark theme behavior]

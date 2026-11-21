@@ -68,7 +68,10 @@ The tasks.md should be immediately executable - each task must be specific enoug
 
 **CRITICAL**: Tasks MUST be organized by user story to enable independent implementation and testing.
 
-**Tests are OPTIONAL**: Only generate test tasks if explicitly requested in the feature specification or if user requests TDD approach.
+**Testing requirements**: Generate automated test tasks for critical domain workflows and
+tenant-isolation boundaries as required by the constitution, even when the specification does
+not explicitly request them. Add other tests when required by the specification. AI provider
+calls MUST be mockable; do not make test tasks conditional on a TDD request.
 
 ### Checklist Format (REQUIRED)
 
@@ -94,9 +97,9 @@ Every task MUST strictly follow this format:
 **Examples**:
 
 - ✅ CORRECT: `- [ ] T001 Create project structure per implementation plan`
-- ✅ CORRECT: `- [ ] T005 [P] Implement authentication middleware in src/middleware/auth.py`
-- ✅ CORRECT: `- [ ] T012 [P] [US1] Create User model in src/models/user.py`
-- ✅ CORRECT: `- [ ] T014 [US1] Implement UserService in src/services/user_service.py`
+- ✅ CORRECT: `- [ ] T005 [P] Implement authentication middleware in src/middleware/auth.ts`
+- ✅ CORRECT: `- [ ] T012 [P] [US1] Create User schema in src/models/user.ts`
+- ✅ CORRECT: `- [ ] T014 [US1] Implement UserService in src/services/user-service.ts`
 - ❌ WRONG: `- [ ] Create User model` (missing ID and Story label)
 - ❌ WRONG: `T001 [US1] Create model` (missing checkbox)
 - ❌ WRONG: `- [ ] [US1] Create User model` (missing Task ID)
@@ -110,12 +113,12 @@ Every task MUST strictly follow this format:
      - Models needed for that story
      - Services needed for that story
      - Interfaces/UI needed for that story
-     - If tests requested: Tests specific to that story
+     - Tests required by the constitution or specification, including critical workflow and tenant-isolation cases
    - Mark story dependencies (most stories should be independent)
 
 2. **From Contracts**:
    - Map each interface contract → to the user story it serves
-   - If tests requested: Each interface contract → contract test task [P] before implementation in that story's phase
+   - Required contract tests → map to the serving story and order according to the approved plan
 
 3. **From Data Model**:
    - Map each entity to the user story(ies) that need it

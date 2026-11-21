@@ -31,19 +31,25 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-**Required Checks** (verify all apply):
-- [ ] TypeScript-First: All code will be TypeScript with strict mode; no `any` types without justification
-- [ ] Test-First: TDD approach planned; tests will be written before implementation
-- [ ] UX Consistency: HeroUI v3 + Tailwind v4 identified; i18n strategy defined; API response envelope format specified
-- [ ] Performance: Performance goals defined (frontend: LCP/FID/CLS targets; backend: p95 response times; bundle size limits); Tailwind v4 optimization utilized
-- [ ] Code Quality: ESLint + Prettier configured; HeroUI v3 compound component patterns enforced; complexity thresholds understood
-- [ ] Security: Input validation method chosen (Zod/Joi); auth strategy (JWT); database security (parameterized queries)
-- [ ] Stack Compliance: Using Next.js full-stack with TypeScript, PostgreSQL (Supabase), Prisma ORM, HeroUI v3; no unauthorized dependencies
+**Required Checks** (address every applicable principle):
+- [ ] AI-Native Product: AI use cases and explicit approval points are defined where applicable
+- [ ] Multi-Tenant By Default: Tenant ownership and isolation are enforced across data access and retrieval
+- [ ] Next.js Architecture: App Router and server/client rendering boundaries fit the feature
+- [ ] Type Safety: TypeScript and Zod runtime validation are applied at relevant boundaries
+- [ ] Provider-Agnostic AI: AI integrations use the provider abstraction; no direct vendor coupling
+- [ ] RAG-Ready: Vector and knowledge ingestion choices preserve extensibility and tenant isolation
+- [ ] Transport-Agnostic Services: Domain logic can be reused independently of HTTP or future MCP
+- [ ] AI UI Compatibility: AI experiences remain compatible with CopilotKit and approval requirements
+- [ ] Mobile Responsiveness and Accessibility: Mobile/tablet, keyboard, and semantic UI needs are addressed
+- [ ] Testing: Critical workflows are tested and AI services can be mocked
+- [ ] Specification-Driven Development: Plan decisions and tasks trace to the approved specification
+- [ ] Theme Compatibility: Applicable UI supports light and dark themes
+- [ ] Preferred Stack and V1 Scope: Preferred technologies are used or deviations justified; V1 non-goals respected
 
 **Violations/Justifications** (if any check marked false):
-| Principle | Why Not Needed | Alternative Approach |
+| Principle | Why Not Applicable or Deviated | Alternative Approach / Mitigation |
 |-----------|----------------|---------------------|
-| [e.g., Performance] | [reason] | [mitigation] |
+| [Principle] | [reason] | [mitigation] |
 
 ## Project Structure
 

@@ -106,13 +106,15 @@ You **MUST** consider the user input before proceeding (if not empty).
 6. Execute implementation following the task plan:
    - **Phase-by-phase execution**: Complete each phase before moving to the next
    - **Respect dependencies**: Run sequential tasks in order, parallel tasks [P] can run together  
-   - **Follow TDD approach**: Execute test tasks before their corresponding implementation tasks
+   - **Honor the test plan**: Execute required critical-workflow and tenant-isolation tests,
+     and use AI mocks rather than live provider calls. Follow test-task ordering where specified.
    - **File-based coordination**: Tasks affecting the same files must run sequentially
    - **Validation checkpoints**: Verify each phase completion before proceeding
 
 7. Implementation execution rules:
    - **Setup first**: Initialize project structure, dependencies, configuration
-   - **Tests before code**: If you need to write tests for contracts, entities, and integration scenarios
+   - **Required tests**: Complete planned tests for critical workflows and tenant boundaries;
+     do not require TDD sequencing unless the approved plan specifies it
    - **Core development**: Implement models, services, CLI commands, endpoints
    - **Integration work**: Database connections, middleware, logging, external services
    - **Polish and validation**: Unit tests, performance optimization, documentation

@@ -64,6 +64,12 @@ Load only the minimal necessary context from each artifact:
 
 - Load `.specify/memory/constitution.md` for principle validation
 
+**From domain model:**
+
+- If `specs/1-domain-model/spec.md` exists, load it as the canonical business-domain reference
+- Check feature entities, ownership, lifecycle, and relationships against the model
+- Treat an unapproved domain-model deviation as a critical alignment issue
+
 ### 3. Build Semantic Models
 
 Create internal representations (do not include raw artifacts in output):
@@ -93,10 +99,12 @@ Focus on high-signal findings. Limit to 50 findings total; aggregate remainder i
 - User stories missing acceptance criteria alignment
 - Tasks referencing files or components not defined in spec/plan
 
-#### D. Constitution Alignment
+#### D. Constitution and Domain Model Alignment
 
 - Any requirement or plan element conflicting with a MUST principle
 - Missing mandated sections or quality gates from constitution
+- Feature entities, ownership, lifecycle, or relationships conflict with the canonical domain
+  model or introduce an unapproved domain-model deviation
 
 #### E. Coverage Gaps
 
@@ -137,7 +145,7 @@ Output a Markdown report (no file writes) with the following structure:
 | Requirement Key | Has Task? | Task IDs | Notes |
 |-----------------|-----------|----------|-------|
 
-**Constitution Alignment Issues:** (if any)
+**Constitution and Domain Model Alignment Issues:** (if any)
 
 **Unmapped Tasks:** (if any)
 

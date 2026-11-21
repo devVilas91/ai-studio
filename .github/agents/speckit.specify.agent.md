@@ -68,7 +68,9 @@ Given that feature description, do this:
    - The JSON output will contain BRANCH_NAME and SPEC_FILE paths
    - For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot")
 
-3. Load `.specify/templates/spec-template.md` to understand required sections.
+3. Load `.specify/templates/spec-template.md` to understand required sections. If
+   `specs/1-domain-model/spec.md` exists, load it as the canonical business-domain reference
+   before drafting the feature specification.
 
 4. Follow this execution flow:
 
@@ -204,6 +206,11 @@ Given that feature description, do this:
 - DO NOT create any checklists that are embedded in the spec. That will be a separate command.
 
 ### Section Requirements
+
+Before creating or updating a feature specification, align its entities, ownership, lifecycle,
+and relationships with `specs/1-domain-model/spec.md` when available. Do not silently redefine
+domain rules; document proposed changes under Domain Model Alignment and require an explicit
+domain-model amendment before dependent implementation.
 
 - **Mandatory sections**: Must be completed for every feature
 - **Optional sections**: Include only when relevant to the feature

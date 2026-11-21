@@ -43,6 +43,7 @@
 - [ ] Mobile Responsiveness and Accessibility: Mobile/tablet, keyboard, and semantic UI needs are addressed
 - [ ] Testing: Critical workflows are tested and AI services can be mocked
 - [ ] Specification-Driven Development: Plan decisions and tasks trace to the approved specification
+- [ ] Domain Model: Entity meaning, tenant ownership, lifecycle, and relationships align with the canonical domain model
 - [ ] Theme Compatibility: Applicable UI supports light and dark themes
 - [ ] Preferred Stack and V1 Scope: Preferred technologies are used or deviations justified; V1 non-goals respected
 

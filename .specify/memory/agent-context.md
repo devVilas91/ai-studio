@@ -29,6 +29,9 @@ constitution takes precedence.
 ## Specification and Quality
 
 - Obtain an approved specification before implementation; plans and tasks must trace to it.
+- Treat `specs/1-domain-model/spec.md` as the canonical business-domain baseline. Feature
+  specifications must reference affected entities and relationships, and must not silently
+  redefine their ownership, lifecycle, or validation rules.
 - Include automated tests for critical domain workflows and tenant isolation. Use Vitest for
   unit/integration testing, Playwright for browser workflows, and aimock to mock AI behavior.
 - Check applicable tenant, AI approval, responsive, accessibility, and theme requirements when

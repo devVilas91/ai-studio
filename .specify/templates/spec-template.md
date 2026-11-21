@@ -100,6 +100,12 @@
 - **[Entity 1]**: [What it represents, key attributes without implementation]
 - **[Entity 2]**: [What it represents, relationships to other entities]
 
+### Domain Model Alignment
+
+- **Canonical model**: [Reference `specs/1-domain-model/spec.md` when it exists]
+- **Entities and relationships used**: [Domain entities and rules this feature relies on]
+- **Proposed model changes**: [None, or explicit changes requiring a domain-model amendment]
+
 ### Scope & Non-Goals
 
 - **In Scope**: [User-visible behavior included in this feature]
